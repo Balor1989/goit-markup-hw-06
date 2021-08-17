@@ -911,7 +911,8 @@ a:hover .client-icon {
   background-color: var(--accent-color);
   border: 2px solid var(--accent-color);
   background-image: url(../images/accept.svg);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .input-name:focus + .icon-person,
