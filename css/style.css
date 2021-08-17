@@ -700,8 +700,10 @@ a:hover .client-icon {
   border-radius: 4px;
 
   background-color: var(--footer-bgc);
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  outline: none;
 }
 .email-btn {
   display: flex;
