@@ -744,8 +744,13 @@ a:hover .client-icon {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+.close-box {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 8px;
+  padding-right: 8px;
+}
 .modal-close {
-  position: absolute;
   display: flex;
   right: 10px;
   top: 10px;
@@ -760,16 +765,105 @@ a:hover .client-icon {
   transition: background-color 250ms var(--cubic-bezier);
 }
 .modal-close-icon {
-  width: 18px;
-  height: 18px;
+  width: 11px;
+  height: 11px;
   fill: var(--button-color);
   transition: fill 250ms var(--cubic-bezier);
 }
 .modal-close:hover .modal-close-icon,
 .modal-close:focus .modal-close-icon {
-  fill: #ffffff;
+  fill: var(--accent-color);
 }
-.modal-close:hover,
-.modal-close:focus {
-  background-color: var(--accent-color);
+.title-form {
+  display: flex;
+  flex-direction: column;
+}
+.modal-title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.modal-form {
+  padding: 0 40px;
+}
+.name-form,
+.phone-form,
+.email-form,
+.coments-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  border-radius: 4px;
+}
+.text-label {
+  margin-bottom: 4px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+}
+.input-name,
+.input-tel,
+.input-email {
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms var(--cubic-bezier);
+}
+.coments-place {
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.coments-place::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.icon-person,
+.icon-phone,
+.icon-email {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(15%);
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms var(--cubic-bezier);
+}
+.input-name:hover + .icon-person,
+.input-tel:hover + .icon-phone,
+.input-email:hover + .icon-email {
+  fill: var(--accent-color);
+}
+.input-name:focus + .icon-person,
+.input-tel:focus + .icon-phone,
+.input-email:focus + .icon-email {
+  fill: var(--accent-color);
+}
+.input-name:hover,
+.input-email:hover,
+.input-tel:hover,
+.coments-place:hover {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+.input-name:focus,
+.input-email:focus,
+.input-tel:focus,
+.coments-place:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
 }
