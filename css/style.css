@@ -912,6 +912,7 @@ a:hover .client-icon {
   border: 2px solid var(--accent-color);
   background-image: url(../images/accept.svg);
   background-size: cover;
+  background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
 }
